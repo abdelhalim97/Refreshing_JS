@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body onload="screenWidth()">
+    <h1 id="changeMe">change me</h1>
+    <input value="1" id="nb">
+    <button onClick="handleClear()" id="clear">clear</button>
+    <button onClick="handleIncrement()" id="increment">increment</button>
+    <button onClick="handlechangeMe()">change me</button>
+    <button onclick="typeName()">typeName</button>
+    <button onclick="openWindow()">openWindow</button>
+    <button onclick="closeWindow()">closeWindow</button>
+    <button onclick="grayMe()" id="grayMe">hit me to create gray span</button>
+<div id="randomNumber"></div>
+<button onclick="randomNumber('randomNumber')"></button>
+<input type="checkbox" id="checking" checked>
+<div id="checkDiv"></div>
+<div>
+    <img onmouseover="addMouseOver()" onmouseout="MouseOut()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png">
+</div>
+<div >
+    <img id="imgToChange" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png">
+</div>
+<form method="post">
+    <select id="city" onchange="fillInput(this.value)">
+        <option>Sousse</option>
+        <option>Tunis</option>
+    </select>
+    <input type="text" id="fillMe">
+    <button id="confirm">confirm</button>
+</form>
+    <script src="script.js"></script>
+</body>
+</html>
